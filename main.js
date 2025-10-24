@@ -3,8 +3,11 @@ const container = document.getElementById("container");
 const button = document.getElementById("button");
 
 submit.addEventListener('click', () => {
-  submit.classList.add("hidden");
-  container.classList.remove("hidden");
+    
+    container.classList.remove("animate-slideDownScale");
+    container.classList.add("animate-slideDownScale");
+    submit.classList.add("hidden");
+    container.classList.remove("hidden");
 });
 
 button.addEventListener('click', () => {
